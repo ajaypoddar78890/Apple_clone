@@ -2,19 +2,22 @@
 
 const Navbar = () => {
   return (
-    <header className="bg-black">
-    <nav className="flex items-center justify-between px-4 py-2">
-        <img src={appleImg} alt="apple img" width={14} height={18} />
+    <header className="bg-black mt-2">
+    <nav className="flex items-center justify-between md:px-4 md:py-2">
+        {/* <img src={appleImg} alt="apple img" width={30} height={24} /> */}
+        <img src={appleImg} alt="apple img" className="w-6 md:w-15   h-auto" />
 
-        <div className="flex gap-4 text-white">
-            {['iphone', 'Macbook', 'Tablet'].map((navItem) => (
-                <div key={navItem}>{navItem}</div>
-            ))}
-        </div>
 
-        <div className="flex gap-4">
-            <img src={searchImg} alt="search img" height={18} width={18} />
-            <img src={bagImg} alt="bag img" height={18} width={18} />
+        <div className="hidden md:flex md:gap-10 text-gray-400">
+  {['iphone', 'Macbook', 'Tablet'].map((navItem) => (
+    <div className="hover:text-white md:text-xl" key={navItem}>{navItem}</div>
+  ))}
+</div>
+
+
+        <div className="flex gap-5 md:gap-6">
+            <img src={searchImg} alt="search img" className="w-6 md:w-15   h-auto" />
+            <img src={bagImg} alt="bag img" className="w-6 md:w-15   h-auto" />
         </div>
     </nav>
 </header>

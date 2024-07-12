@@ -26,12 +26,15 @@ const Hero = () => {
 
 
   useGSAP(()=>{
-     gsap.to ('#hero' , {opacity: 1, delay: 1.5})
-     gsap.to ('#cta' , {opacity: 1, delay: 2})
+    //  gsap.to ('#hero' , {opacity: 1, delay: 2})
+    //  gsap.to ('#cta' , {opacity: 1, delay: 2})
+    gsap.to('#hero', { opacity: 1, delay: 2, ease: 'power2.inOut', duration: 1 });
+gsap.to('#cta', { opacity: 1, delay: 2, ease: 'power2.inOut', duration: 1 });
+
   },[])
   return (
     <section className="w-full nav-height bg-black relative">
-    <div className="5/6 w-full flex-center flex-col py-10 ">
+    <div className="5/6 w-full flex-center flex-col py-2 md:py-4 ">
       <p id="hero" className="hero-title"> iphone 15</p>
 
       <div className="md:w-full w-full flex-center">
@@ -44,8 +47,8 @@ const Hero = () => {
 
     <div id="cta" className="flex flex-col items-center opacity-0 translate-y-20">
 
-   <a href="#highlights"> Buy</a>
-   <p className="font-normal text-xl">
+   <a  className="bg-gray-400 px-10 py-1 rounded-lg text-black font-semibold my-1" href="#highlights"> Buy</a>
+   <p className="font-medium text-xl">
     from  $199/month or %999
    </p>
 
