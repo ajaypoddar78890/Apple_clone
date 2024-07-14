@@ -1,23 +1,17 @@
- import Navbar from "./componants/Navbar"
- import Hero from "./componants/Hero"
- import Highlights from "./componants/highlights"
+import Navbar from "./componants/Navbar";
+import Hero from "./componants/Hero";
+import Hightlight from "./componants/Hightlight";
 
 function App() {
- 
-
   return (
     <>
-<section className="main-section   flex items-center justify-center h-screen">
-  <div className="container mx-auto px-8 md:px-10">
-    <Navbar />
-    <Hero />
-    <Highlights />
-  </div>
-</section>
-
-
+      <div className=" selection:">
+        <Navbar />
+        <Hero />
+        <Hightlight />
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

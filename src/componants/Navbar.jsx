@@ -2,7 +2,7 @@
 
 const Navbar = () => {
   return (
-    <header className="bg-black mt-2">
+    <header className="bg-black mt-2 container mx-auto  px-5 py-2  md:px-10">
     <nav className="flex items-center justify-between md:px-4 md:py-2">
         {/* <img src={appleImg} alt="apple img" width={30} height={24} /> */}
         <img src={appleImg} alt="apple img" className="w-6 md:w-15   h-auto" />
