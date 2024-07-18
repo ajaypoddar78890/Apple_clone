@@ -37,7 +37,7 @@ const Hero = () => {
     });
   }, []);
   return (
-    <section className="custom-section w-full nav-height bg-black relative container mx-auto px-5 md:px-10">
+    <section className="custom-section w-full h-full nav-height bg-black relative container mx-auto px-5 md:px-10">
       <div className="content w-full flex-center flex-col py-2 md:py-4">
         <div className="video-container md:w-full w-full flex-center">
           <video
