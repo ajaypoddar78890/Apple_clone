@@ -29,6 +29,19 @@ canvas {
   max-width: 1120px;
 }
 
+.custom-section {
+  height: 100vh; /* or any fixed height like 600px, 80vh, etc. */
+  overflow: hidden; /* This ensures any overflow is hidden */
+}
+
+.content {
+  height: 60%; /* Adjust this as needed */
+}
+
+.video-container {
+  height: 100%; /* Ensure the video container takes full height */
+}
+
 @layer utilities {
   .flex-center {
     @apply flex items-center justify-center;
