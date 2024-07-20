@@ -51,22 +51,21 @@ const Hero = () => {
             <source src={videoSrc} type="video/mp4" />
           </video>
         </div>
-      </div>
-
-      <div
-        id="cta"
-        className="flex flex-col items-center opacity-0 translate-y-20"
-      >
-        <p id="hero" className="hero-title">
-          iphone 15
-        </p>
-        <a
-          className="bg-gray-400 px-10 py-1 rounded-lg text-black font-semibold my-1"
-          href="#highlights"
+        <div
+          id="cta"
+          className="flex flex-col items-center opacity-0 translate-y-20"
         >
-          Buy
-        </a>
-        <p className="font-medium text-xl">from $199/month or $999</p>
+          <p id="hero" className="hero-title md:mb-3  md:text-4xl lg:text-5xl ">
+            iphone 15
+          </p>
+          <a
+            className="bg-blue-800 px-10 py-1 rounded-lg text-black font-semibold  mb-5 md:mb-5"
+            href="#highlights"
+          >
+            Buy
+          </a>
+          <p className="font-medium text-xl">from $199/month or $999</p>
+        </div>
       </div>
     </section>
   );

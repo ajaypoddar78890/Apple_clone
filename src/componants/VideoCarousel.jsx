@@ -1,63 +1,60 @@
-// import { list } from "postcss";
-import { hightlightsSlides } from "../constants";
 import { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { hightlightsSlides } from "../constants";
 
 gsap.registerPlugin(ScrollTrigger);
+
 const VideoCarousel = () => {
   useEffect(() => {
-    // Calculate the total width needed for horizontal scrolling
-    const totalWidth = document.querySelector(".video-carousel").scrollWidth;
-    const viewportWidth = window.innerWidth;
+    // const totalWidth = document.querySelector(".video-carousel").scrollWidth;
+    // const viewportWidth = window.innerWidth;
+    // const scrollableWidth = totalWidth - viewportWidth;
 
     gsap.to(".video-carousel_container", {
-      xPercent: -200 * (hightlightsSlides.length - 1), // Adjust based on the number of slides
+      xPercent: -90 * (hightlightsSlides.length - 1), // Adjust based on the number of slides
       ease: "none", // No easing for linear motion
       scrollTrigger: {
-        trigger: "video-carousel",
+        trigger: "#highlights", // Change the trigger to the highlights section
         scroller: "body", // Use "body" to ensure it works with the scroll container
         pin: true,
-        scrub: 1, // Adjust this value for the scroll-to-animation synchronization
+        scrub: 4, // Adjust this value for the scroll-to-animation synchronization
         markers: true, // Markers for debugging
-        start: "30%",
-        end: () => `+=${totalWidth - viewportWidth}`, // End value based on total scrollable width
+        start: "top 10%", // Start animation when #highlights hits the top of the viewport
+        end: " 0%",
       },
     });
-  }, [hightlightsSlides]);
+  }, []);
 
   return (
-    <>
-      <div className="flex overflow-x-auto ">
-        <div className="video-carousel flex">
-          {hightlightsSlides.map((item, i) => (
-            <div key={item.id} id="slider" className="pr-10 md:pr-10">
-              <div className="video-carousel_container mt-5">
-                <div className="w-full h-full flex-center rounded-3xl bg-black">
-                  <video
-                    className="w-full h-full object-cover"
-                    playsInline
-                    preload="auto"
-                    muted
-                    autoPlay
-                    loop={true}
-                  >
-                    <source src={item.video} type="video/mp4" />
-                  </video>
-                </div>
-
-                <div className="absolute top-4 left-4 z-10">
-                  <p className="md:text-2xl text-lg font-medium">
-                    The Brand new iPhone 15 <br />
-                    has all the features needed
-                  </p>
-                </div>
+    <div className="flex overflow-x-hidden parent mt-10">
+      <div className="video-carousel flex">
+        {hightlightsSlides.map((item) => (
+          <div key={item.id} id="slider" className="pr-10 md:pr-10">
+            <div className="video-carousel_container mt-5">
+              <div className="w-full h-full flex-center rounded-3xl bg-black">
+                <video
+                  className="w-full h-full object-cover"
+                  playsInline
+                  preload="auto"
+                  muted
+                  autoPlay
+                  loop={true}
+                >
+                  <source src={item.video} type="video/mp4" />
+                </video>
+              </div>
+              <div className="absolute top-4 left-4 z-10">
+                <p className="md:text-3xl md:font-semibold italic text-md font-medium">
+                  The Brand new iPhone 15 <br />
+                  has all the features needed
+                </p>
               </div>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
-    </>
+    </div>
   );
 };
 
