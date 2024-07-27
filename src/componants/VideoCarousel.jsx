@@ -19,7 +19,7 @@ const VideoCarousel = () => {
         scroller: "body", // Use "body" to ensure it works with the scroll container
         pin: true,
         scrub: 4, // Adjust this value for the scroll-to-animation synchronization
-        markers: true, // Markers for debugging
+
         start: "top 10%", // Start animation when #highlights hits the top of the viewport
         end: " 0%",
       },
