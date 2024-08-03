@@ -11,6 +11,10 @@ const Acamerasection = () => {
           what you can do with our most powerful iPhone camera system.
         </p>
       </div>
+
+      <div className="image bg-red-600 h-full w-full">
+        <img src="/assets/images/lizardimg.webp" alt="" />
+      </div>
     </div>
   );
 };
