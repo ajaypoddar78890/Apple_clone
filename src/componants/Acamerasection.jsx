@@ -8,7 +8,11 @@ const Acamerasection = () => {
 
         <p className="text-lg md:text-2xl py-5 md:mt-4 font-bold text-gray-600 ">
           From dramatic framing flexibility to next-generation portraits, see
-          what you can do with our most powerful iPhone camera system.
+          what you can do with our most powerful iPhone camera system. Lorem
+          ipsum dolor sit, amet consectetur adipisicing elit. Explicabo
+          praesentium facilis doloribus fugit tenetur nostrum, perferendis nisi
+          vero? Quod nisi incidunt reiciendis! Ea quibusdam aut deserunt
+          distinctio molestiae, dignissimos natus?
         </p>
       </div>
 
