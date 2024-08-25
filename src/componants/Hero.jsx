@@ -37,9 +37,16 @@ const Hero = () => {
     });
   }, []);
   return (
-    <section className="custom-section w-full h-full nav-height bg-black relative container mx-auto px-5 md:px-10">
-      <div className="content w-full flex-center flex-col py-2 md:py-4">
-        <div className="video-container md:w-full w-full flex-center">
+    <section className="custom-section    bg-black relative     ">
+      <div className=" container-div h-full selection: container mx-auto  ">
+        <p
+          id="hero"
+          className="hero-title  first-letter:  md:text-4xl lg:text-5xl "
+        >
+          iphone 15
+        </p>
+
+        <div className="    ">
           <video
             className="pointer-events-none"
             autoPlay
@@ -51,20 +58,13 @@ const Hero = () => {
             <source src={videoSrc} type="video/mp4" />
           </video>
         </div>
+
         <div
           id="cta"
           className="flex flex-col items-center opacity-0 translate-y-20"
         >
-          <p id="hero" className="hero-title md:mb-3  md:text-4xl lg:text-5xl ">
-            iphone 15
-          </p>
-          <a
-            className="bg-blue-800 px-10 py-1 rounded-lg text-black font-semibold  mb-5 md:mb-5"
-            href="#highlights"
-          >
-            Buy
-          </a>
-          <p className="font-medium text-xl">from $199/month or $999</p>
+          <p className="cta-text md:text-2xl text-xl ">buy now</p>
+          <button className="cta-btn md:text-lg text-sm ">$1,299.99</button>
         </div>
       </div>
     </section>
