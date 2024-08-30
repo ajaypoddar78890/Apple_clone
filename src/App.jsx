@@ -5,6 +5,7 @@ import Showcase from "./componants/showcase";
 import { HeroScrollDemo } from "./componants/HeroScrollDemo";
 // import { TextGenerateEffectDemo } from "./componants/TextGenerateEffectDemo";
 import Acamerasection from "./componants/Acamerasection";
+import ExploreSection from "./componants/exploresection";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Showcase />
         {/* <TextGenerateEffectDemo /> */}
         <Acamerasection />
+        <ExploreSection />
       </div>
     </>
   );

@@ -1,11 +1,5 @@
-import React from 'react'
+const randomReflector = () => {
+  return <div></div>;
+};
 
-const  = () => {
-  return (
-    <div>
-      this is random page 
-    </div>
-  )
-}
-
-export default 
+export default randomReflector;
