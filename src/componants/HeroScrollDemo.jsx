@@ -39,8 +39,8 @@ export function HeroScrollDemo() {
   }, []);
 
   return (
-    <div className="flex flex-col overflow-hidden">
-      <ContainerScroll
+    <div className="flex flex-col overflow-hidden mx-h-[40vh] ">
+      <ContainerScroll 
         titleComponent={
           <div ref={textRef}>
             <h1 className="animated-text text-3xl md:text-4xl font-semibold text-zinc-700 dark:text-white">
@@ -56,10 +56,8 @@ export function HeroScrollDemo() {
         <img
           src="/assets/images/iphone15collage.webp"
           alt="hero"
-          height={720}
-          width={1500}
-          className="mx-auto rounded-2xl object-cover h-full object-left-top"
-          draggable={false}
+          className="mx-auto rounded-2xl object-cover max-h-[100vh] w-auto"
+          draggable={true}
         />
       </ContainerScroll>
     </div>

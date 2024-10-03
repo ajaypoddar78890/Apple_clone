@@ -38,13 +38,10 @@ const Hero = () => {
   }, []);
   return (
     <section className=" custom-section  bg-black  ">
-      <div className=" container mx-auto ">
-        <p
-          id="hero"
-          className="hero-title  first-letter:  md:text-4xl lg:text-5xl "
-        >
+      <div className=" container mx-auto mt-5 ">
+        <p id="hero" className="font-customheading text-md hero-title md:text-4xl lg:text-5xl ">
           iphone 15 pro
-        </p> 
+        </p>
         <div className=" md:m-15">
           <video
             className="pointer-events-none"
@@ -60,15 +57,15 @@ const Hero = () => {
 
         <div
           id="cta"
-          className="flex flex-col items-center opacity-0 translate-y-20"
+          className="flex flex-col items-center opacity-0 translate-y-2 font-custometext"
         >
-          <p className="cta-text md:text-2xl text-xl  px-10 py-2 bg-blue-700  rounded-lg mb-5 cursor-pointer">
+          <p className="cta-text md:text-2xl text-xl  px-10 py-2 bg-blue-700  rounded-lg mb-8 cursor-pointer">
             Buy now
           </p>
-          <p className="cta-btn md:text-lg text-sm ">
+          <p className="cta-btn md:text-xl text-sm mb-3">
             From $999 or $41.62/mo. for 24 mo.1
           </p>
-          <p>Apple Intelligence coming this fall2</p>
+          <p className="text-md">Apple Intelligence coming this fall2</p>
         </div>
       </div>
     </section>

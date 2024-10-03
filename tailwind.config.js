@@ -22,7 +22,12 @@ export default {
     "./src/**/*.{js,jsx,ts,tsx}", // Adjust to match your project structure
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        customheading: ["customeheader", "sans-serif"],
+        custometext: ["custometext", "sans-serif"],
+      },
+    },
   },
   plugins: [],
 };

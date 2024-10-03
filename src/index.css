@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "customeheader";
+  src: url("../public/assets/fonts/sf-pro-display_semibold.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "custometext";
+  src: url("../public/assets/fonts/sf-pro-text_regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -30,7 +44,7 @@ canvas {
 }
 
 .custom-section {
- padding: 30px 0;
+  padding: 30px 0;
 }
 
 .content {

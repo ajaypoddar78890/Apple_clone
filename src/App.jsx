@@ -6,6 +6,7 @@ import { HeroScrollDemo } from "./componants/HeroScrollDemo";
 // import { TextGenerateEffectDemo } from "./componants/TextGenerateEffectDemo";
 import Acamerasection from "./componants/Acamerasection";
 import ExploreSection from "./componants/exploresection";
+// import Videocarousel from "./componants/VideoCarousel";
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
         <Navbar />
         <Hero />
         <Hightlight />
+        {/* <Videocarousel/> */}
+
         <HeroScrollDemo />
         <Showcase />
         {/* <TextGenerateEffectDemo /> */}
