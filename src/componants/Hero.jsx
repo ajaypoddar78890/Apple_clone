@@ -37,16 +37,15 @@ const Hero = () => {
     });
   }, []);
   return (
-    <section className="custom-section    bg-black relative     ">
-      <div className=" container-div h-full selection: container mx-auto  ">
+    <section className=" custom-section  bg-black  ">
+      <div className=" container mx-auto ">
         <p
           id="hero"
           className="hero-title  first-letter:  md:text-4xl lg:text-5xl "
         >
-          iphone 15
-        </p>
-
-        <div className="    ">
+          iphone 15 pro
+        </p> 
+        <div className=" md:m-15">
           <video
             className="pointer-events-none"
             autoPlay
@@ -63,8 +62,13 @@ const Hero = () => {
           id="cta"
           className="flex flex-col items-center opacity-0 translate-y-20"
         >
-          <p className="cta-text md:text-2xl text-xl ">buy now</p>
-          <button className="cta-btn md:text-lg text-sm ">$1,299.99</button>
+          <p className="cta-text md:text-2xl text-xl  px-10 py-2 bg-blue-700  rounded-lg mb-5 cursor-pointer">
+            Buy now
+          </p>
+          <p className="cta-btn md:text-lg text-sm ">
+            From $999 or $41.62/mo. for 24 mo.1
+          </p>
+          <p>Apple Intelligence coming this fall2</p>
         </div>
       </div>
     </section>
