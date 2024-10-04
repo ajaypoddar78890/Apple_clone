@@ -8,7 +8,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Showcase = () => {
   return (
-    <div className="main container mx-auto px-10 md:pt-20">
+    <div className="main container mx-auto px-10 md:pt-20 font-customheading">
       <div className="text-gray-300 md:text-center     w-full md:mx-auto">
         <h2 className="text-pop-up-right text-4xl md:text-6xl  md:font-bold lg:text-8xl  whitespace-nowrap overflow-hidden">
           A17 Pro chip.
