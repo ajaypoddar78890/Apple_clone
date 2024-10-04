@@ -39,8 +39,8 @@ export function HeroScrollDemo() {
   }, []);
 
   return (
-    <div className="flex flex-col overflow-hidden mx-h-[40vh] ">
-      <ContainerScroll 
+    <div className="flex flex-col overflow-hidden   ">
+      <ContainerScroll
         titleComponent={
           <div ref={textRef}>
             <h1 className="animated-text text-3xl md:text-4xl font-semibold text-zinc-700 dark:text-white">
