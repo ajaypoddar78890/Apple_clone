@@ -40,13 +40,13 @@ const Highlight = () => {
   return (
     <section
       id="highlights"
-      className="h-full w-full overflow-hidden bg-zinc-900 md:my-28 justify-between mx-auto px-5 pt-5 md:px-10"
+      className="h-full w-full overflow-hidden bg-zinc-900 md:my-28 justify-between mx-auto px-5 pt-5 md:px-10 font-customheading"
     >
       <div className="container-heading font-customheading flex justify-between container">
         <div>
           <h1
             id="title"
-            className="opacity-0 translate-y-20 text-lg md:text-2xl font-semibold lg:text-5xl"
+            className="opacity-0 translate-y-20 text-lg md:text-2xl font-semibold lg:text-5xl font-customheading"
           >
             Get The Highlights
           </h1>

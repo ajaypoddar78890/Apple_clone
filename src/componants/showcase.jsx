@@ -8,23 +8,23 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Showcase = () => {
   return (
-    <div className="main container mx-auto px-10 py-20">
-      <div className="text-gray-300 text-center px-10 md:text-6xl w-full h-full container mx-auto">
-        <h2 className="text-pop-up-right text-2xl md:text-4xl  md:font-bold lg:text-7xl xl:text-8xl whitespace-nowrap overflow-hidden">
+    <div className="main container mx-auto px-10 md:pt-20">
+      <div className="text-gray-300 md:text-center     w-full md:mx-auto">
+        <h2 className="text-pop-up-right text-4xl md:text-6xl  md:font-bold lg:text-8xl  whitespace-nowrap overflow-hidden">
           A17 Pro chip.
         </h2>
         <h2
-          className="text-pop-up-right text-2xl md:text-4xl
-        md:font-bold lg:text-7xl whitespace-nowrap overflow-hidden"
+          className="text-pop-up-right text-4xl md:text-6xl
+        md:font-bold lg:text-8xl whitespace-nowrap overflow-hidden"
         >
           A monster win for gaming.
         </h2>
 
-        <p className="text-lg first-line: py-2 md:text-2xl mt-2 md:mt-4 md:font-bold text-gray-600">
+        <p className="text-lg first-line: py-2 md:text-2xl mt-2 md:mt-4 md:font-bold text-gray-500">
           It’s here. The biggest redesign in the history of Apple GPUs.
         </p>
       </div>
-      <div className="videosection md:mt-10   ">
+      <div className="videosection mt-10 md:mt-10   ">
         <video
           className="w-full h-full object-cover"
           playsInline
