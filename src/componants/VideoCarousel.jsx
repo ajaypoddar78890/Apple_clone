@@ -27,7 +27,7 @@ const VideoCarousel = () => {
   }, []);
 
   return (
-    <div className="flex overflow-x-hidden parent mt-10">
+    <div className="flex overflow-x-hidden parent my-5">
       <div className="video-carousel flex">
         {hightlightsSlides.map((item) => (
           <div key={item.id} id="slider" className="pr-10 md:pr-10">

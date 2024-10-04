@@ -46,16 +46,16 @@ const Highlight = () => {
         <div>
           <h1
             id="title"
-            className="opacity-0 translate-y-20 text-lg md:text-2xl font-semibold lg:text-5xl font-customheading"
+            className="opacity-0 translate-y-20 text-xl md:text-2xl font-semibold lg:text-5xl font-customheading"
           >
             Get The Highlights
           </h1>
         </div>
-        <div className="md:flex gap-3">
-          <p className="opacity-0 translate-y-20 text-sm md:text-md text-blue-800 link lg:text-xl cursor-pointer">
+        <div className="md:flex gap-2">
+          <p className="opacity-0 translate-y-20 text-lg md:text-xl text-blue-800 link lg:text-xl cursor-pointer">
             Watch the Story
           </p>
-          <p className="opacity-0 translate-y-20 text-sm md:text-md text-blue-800 link lg:text-xl cursor-pointer">
+          <p className="opacity-0 translate-y-20 text-lg md:text-xl text-blue-800 link lg:text-xl cursor-pointer">
             Watch the reel
           </p>
         </div>

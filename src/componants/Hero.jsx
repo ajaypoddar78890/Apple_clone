@@ -57,12 +57,12 @@ const Hero = () => {
 
         <div
           id="cta"
-          className="flex flex-col items-center opacity-0 translate-y-2 font-custometext"
+          className="flex flex-col items-center opacity-0 translate-y-2 font-custometext mt-20"
         >
           <p className="cta-text md:text-2xl text-xl  px-10 py-2 bg-blue-700  rounded-lg mb-8 cursor-pointer">
             Buy now
           </p>
-          <p className="cta-btn md:text-xl text-sm mb-3">
+          <p className="cta-btn md:text-xl text-sm mt-5">
             From $999 or $41.62/mo. for 24 mo.1
           </p>
           <p className="text-md">Apple Intelligence coming this fall2</p>

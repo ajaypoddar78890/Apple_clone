@@ -43,7 +43,7 @@ export function HeroScrollDemo() {
       <ContainerScroll
         titleComponent={
           <div ref={textRef}>
-            <h1 className="animated-text text-3xl md:text-4xl font-semibold text-zinc-700 dark:text-white">
+            <h1 className="animated-text text-2xl md:text-4xl font-semibold text-zinc-700 dark:text-white">
               Colour through and through.
               <br />
               <span className="animated-text text-4xl md:text-[6rem] font-bold mt-1 leading-none">
